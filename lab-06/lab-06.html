@@ -1,0 +1,136 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Nook</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, sans-serif;
+      background: #f4f1ea;
+      color: #29251f;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+
+    .library {
+      width: min(900px, 100%);
+      background: #fffdf8;
+      border: 1px solid #ded7ca;
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 12px 35px rgba(54, 45, 32, 0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #5b4636;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    th,
+    td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e5dfd4;
+    }
+
+    th {
+      background: #5b4636;
+      color: white;
+      font-weight: 700;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f8f5ef;
+    }
+
+    tbody tr:hover {
+      background: #eee7dc;
+    }
+
+    tfoot td {
+      background: #eadfce;
+      color: #5b4636;
+      font-weight: 700;
+      text-align: right;
+      border-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <main class="library">
+    <h1>Book Nook</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Publication Year</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>The Hobbit</td>
+          <td>J.R.R. Tolkien</td>
+          <td>Fantasy</td>
+          <td>1937</td>
+        </tr>
+        <tr>
+          <td>Jane Eyre</td>
+          <td>Charlotte Brontë</td>
+          <td>Romance</td>
+          <td>1847</td>
+        </tr>
+        <tr>
+          <td>1984</td>
+          <td>George Orwell</td>
+          <td>Dystopian</td>
+          <td>1949</td>
+        </tr>
+        <tr>
+          <td>The Great Gatsby</td>
+          <td>F. Scott Fitzgerald</td>
+          <td>Classic</td>
+          <td>1925</td>
+        </tr>
+        <tr>
+          <td>Beloved</td>
+          <td>Toni Morrison</td>
+          <td>Historical Fiction</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          <td>Dune</td>
+          <td>Frank Herbert</td>
+          <td>Science Fiction</td>
+          <td>1965</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="4">Total Books: 6</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+</body>
+</html>
